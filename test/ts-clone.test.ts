@@ -254,7 +254,8 @@ describe('ts-clone', () => {
       expect(clone.__getRegExpFlags(/a/i)).toBe('i')
       expect(clone.__getRegExpFlags(/a/g)).toBe('g')
       expect(clone.__getRegExpFlags(/a/gi)).toBe('gi')
-      expect(clone.__getRegExpFlags(/a/)).toBe('m')
+      // eslint-disable-next-line regexp/no-useless-flag
+      expect(clone.__getRegExpFlags(/a/m)).toBe('m')
     })
 
     test('should recognize Array objects', () => {
