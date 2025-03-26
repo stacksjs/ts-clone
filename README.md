@@ -1,7 +1,7 @@
 <p align="center"><img src=".github/art/cover.jpg" alt="Social Card of this repo"></p>
 
 [![npm version](https://img.shields.io/npm/v/ts-clone.svg)](https://www.npmjs.com/package/ts-clone)
-[![License](https://img.shields.io/npm/l/ts-clone.svg)](https://github.com/stacksjs/ts-clone/blob/main/LICENSE)
+[![License](https://img.shields.io/npm/l/ts-clone.svg)](https://github.com/stacksjs/ts-clone/blob/main/LICENSE.md)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/ts-clone)](https://bundlephobia.com/package/ts-clone)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8%2B-blue)](https://www.typescriptlang.org/)
 
