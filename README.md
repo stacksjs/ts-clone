@@ -1,7 +1,7 @@
 <p align="center"><img src=".github/art/cover.jpg" alt="Social Card of this repo"></p>
 
 [![npm version](https://img.shields.io/npm/v/ts-clone.svg)](https://www.npmjs.com/package/ts-clone)
-[![License](https://img.shields.io/npm/l/ts-clone.svg)](https://github.com/stacksjs/ts-clone/blob/main/LICENSE.md)
+[![GitHub Actions][github-actions-src]][github-actions-href]
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/ts-clone)](https://bundlephobia.com/package/ts-clone)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8%2B-blue)](https://www.typescriptlang.org/)
 
@@ -161,3 +161,6 @@ We would like to extend our thanks to the following sponsors for funding Stacks 
 The MIT License (MIT). Please see [LICENSE](LICENSE.md) for more information.
 
 Made with 💙
+
+[github-actions-src]: https://img.shields.io/github/actions/workflow/status/stacksjs/ts-clone/ci.yml?style=flat-square&branch=main
+[github-actions-href]: https://github.com/stacksjs/ts-clone/actions?query=workflow%3Aci
