@@ -1,4 +1,16 @@
 
+## v0.1.0...main
+
+[compare changes](https://github.com/stacksjs/ts-clone/compare/v0.1.0...main)
+
+### 🏡 Chore
+
+- Get test passing ([d4ce611](https://github.com/stacksjs/ts-clone/commit/d4ce611))
+
+### ❤️ Contributors
+
+- Chris ([@chrisbbreuer](https://github.com/chrisbbreuer))
+
 ## ...main
 
 
