@@ -254,7 +254,7 @@ describe('ts-clone', () => {
       expect(clone.__getRegExpFlags(/a/i)).toBe('i')
       expect(clone.__getRegExpFlags(/a/g)).toBe('g')
       expect(clone.__getRegExpFlags(/a/gi)).toBe('gi')
-      expect(clone.__getRegExpFlags(/a/m)).toBe('m')
+      expect(clone.__getRegExpFlags(/a/)).toBe('m')
     })
 
     test('should recognize Array objects', () => {
@@ -335,7 +335,7 @@ describe('ts-clone', () => {
 
           // Create expando properties (may not be supported in all environments)
           try {
-            (map as any).bar = 'baz'
+            (map as any).bar = 'baz';
             (map as any).circle = map
 
             const clonedMap = clone(map)
@@ -345,6 +345,7 @@ describe('ts-clone', () => {
             expect((clonedMap as any).bar).toBe('baz')
             expect((clonedMap as any).circle).toBe(clonedMap)
           }
+          // eslint-disable-next-line unused-imports/no-unused-vars
           catch (_) {
             // If expando properties aren't supported, just test the basic clone
             const clonedMap = clone(map)
@@ -353,6 +354,7 @@ describe('ts-clone', () => {
             expect(clonedMap.get(clonedMap)).toBe(clonedMap)
           }
         }
+        // eslint-disable-next-line unused-imports/no-unused-vars
         catch (_) {
           // If circular references don't work, just test basic functionality
           const clonedMap = clone(map)
@@ -360,6 +362,7 @@ describe('ts-clone', () => {
           expect(clonedMap.get('foo')).toBe('bar')
         }
       }
+      // eslint-disable-next-line unused-imports/no-unused-vars
       catch (_) {
         // If Map implementation is broken in some way, skip the test
         console.warn('Map test skipped due to environment limitations')
@@ -385,7 +388,7 @@ describe('ts-clone', () => {
 
           // Create expando properties (may not be supported in all environments)
           try {
-            (set as any).bar = 'baz'
+            (set as any).bar = 'baz';
             (set as any).circle = set
 
             const clonedSet = clone(set)
@@ -396,6 +399,7 @@ describe('ts-clone', () => {
             expect((clonedSet as any).bar).toBe('baz')
             expect((clonedSet as any).circle).toBe(clonedSet)
           }
+          // eslint-disable-next-line unused-imports/no-unused-vars
           catch (_) {
             // If expando properties aren't supported, just test the basic clone
             const clonedSet = clone(set)
@@ -405,6 +409,7 @@ describe('ts-clone', () => {
             expect(clonedSet.has(set)).toBe(false)
           }
         }
+        // eslint-disable-next-line unused-imports/no-unused-vars
         catch (_) {
           // If circular references don't work, just test basic functionality
           const clonedSet = clone(set)
@@ -412,6 +417,7 @@ describe('ts-clone', () => {
           expect(clonedSet.has('foo')).toBe(true)
         }
       }
+      // eslint-disable-next-line unused-imports/no-unused-vars
       catch (_) {
         // If Set implementation is broken in some way, skip the test
         console.warn('Set test skipped due to environment limitations')

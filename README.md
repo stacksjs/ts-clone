@@ -98,7 +98,12 @@ console.log(clonedCustomProto.shared) // undefined
 
 ```typescript
 // Clone just the prototype
-const proto = { method() { return 'result' } }
+const proto = {
+  method() {
+    return 'result'
+  }
+}
+
 const protoClone = clone.clonePrototype(proto)
 
 // Type checking utilities
