@@ -54,7 +54,7 @@
     "typecheck": "bun --bun tsc --noEmit"
   },
   "devDependencies": {
-    "@happy-dom/global-registrator": "^19.0.2",
+    "@happy-dom/global-registrator": "^20.7.0",
     "@stacksjs/docs": "^0.70.23",
     "better-dx": "^0.2.5"
   },
