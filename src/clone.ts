@@ -281,6 +281,7 @@ clone.clonePrototype = function clonePrototype(parent: any): any {
     return null
 
   // Define CustomConstructor with explicit constructor signature
+  // eslint-disable-next-line no-unused-vars
   const CustomConstructor: { new(): object, prototype: any } = function (this: any) {
     // Empty constructor
   } as any

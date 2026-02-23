@@ -43,8 +43,10 @@
     "fresh": "bunx rimraf node_modules/ bun.lock && bun i",
     "prepublishOnly": "bun --bun run build",
     "test": "bun test",
-    "lint": "bunx --bun eslint .",
-    "lint:fix": "bunx --bun eslint . --fix",
+    "lint": "bunx --bun pickier lint .",
+    "lint:fix": "bunx --bun pickier lint . --fix",
+    "format": "bunx --bun pickier format .",
+    "format:fix": "bunx --bun pickier format . --write",
     "changelog": "bunx logsmith --verbose",
     "changelog:generate": "bunx logsmith --output CHANGELOG.md",
     "release": "bun run changelog:generate && bunx bumpx prompt --recursive",
@@ -53,22 +55,13 @@
   },
   "devDependencies": {
     "@happy-dom/global-registrator": "^19.0.2",
-    "@stacksjs/bumpx": "^0.1.84",
-    "@stacksjs/clarity": "^0.3.23",
     "@stacksjs/docs": "^0.70.23",
-    "@stacksjs/eslint-config": "^4.14.0-beta.3",
-    "@stacksjs/gitlint": "^0.1.5",
-    "@stacksjs/logsmith": "^0.1.18",
-    "@types/bun": "^1.2.23",
-    "buddy-bot": "^0.9.7",
-    "bun-git-hooks": "^0.2.19",
-    "bun-plugin-dtsx": "^0.21.12",
-    "typescript": "^5.9.3"
+    "better-dx": "^0.2.5"
   },
   "git-hooks": {
     "pre-commit": {
       "staged-lint": {
-        "*.{js,ts,json,yaml,yml,md}": "bunx --bun eslint --fix"
+        "*.{js,ts,json,yaml,yml,md}": "bunx --bun pickier lint --fix"
       }
     },
     "commit-msg": "bunx gitlint --edit .git/COMMIT_EDITMSG"
