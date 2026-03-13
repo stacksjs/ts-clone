@@ -2,7 +2,7 @@
 
 ## About
 
-Simple and fast TypeScript deep cloning.
+ts-clone is a high-performance, type-safe deep cloning utility for TypeScript and JavaScript. It handles circular references by default, supports ES6+ types (Map, Set, Symbol, Promise, RegExp, Date), and offers configurable clone depth and prototype handling. It also includes utility functions for type checking and prototype cloning.
 
 ## Linting
 
