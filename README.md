@@ -107,12 +107,12 @@ const proto = {
 const protoClone = clone.clonePrototype(proto)
 
 // Type checking utilities
-clone.__isArray([1, 2, 3]) // true
-clone.__isDate(new Date()) // true
-clone.__isRegExp(/pattern/) // true
+clone.**isArray([1, 2, 3]) // true
+clone.**isDate(new Date()) // true
+clone.**isRegExp(/pattern/) // true
 
 // RegExp flags extraction
-clone.__getRegExpFlags(/pattern/gi) // 'gim'
+clone.**getRegExpFlags(/pattern/gi) // 'gim'
 ```
 
 ## Use Cases

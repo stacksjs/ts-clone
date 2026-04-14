@@ -13,7 +13,6 @@
 
 ## ...main
 
-
 ### 🏡 Chore
 
 - Initial commit ([df61eeb](https://github.com/stacksjs/ts-clone/commit/df61eeb))
@@ -23,4 +22,3 @@
 ### ❤️ Contributors
 
 - Chris ([@chrisbbreuer](https://github.com/chrisbbreuer))
-
