@@ -57,8 +57,8 @@
     "typecheck": "bun --bun tsc --noEmit"
   },
   "devDependencies": {
-    "@happy-dom/global-registrator": "^19.0.2",
-    "better-dx": "^0.2.7"
+    "@happy-dom/global-registrator": "^20.9.0",
+    "better-dx": "^0.2.12"
   },
   "git-hooks": {
     "pre-commit": {
