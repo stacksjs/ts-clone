@@ -2,7 +2,7 @@
   "name": "ts-clone",
   "type": "module",
   "sideEffects": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple and fast TypeScript in-memory caching. Modern TypeScript port of node-cache.",
   "author": "Chris Breuer <chris@stacksjs.org>",
   "license": "MIT",
