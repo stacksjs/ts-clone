@@ -59,7 +59,7 @@
   },
   "devDependencies": {
     "@happy-dom/global-registrator": "^19.0.2",
-    "better-dx": "^0.2.15"
+    "better-dx": "^0.2.25"
   },
   "git-hooks": {
     "pre-commit": {
